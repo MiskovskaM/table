@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> 
+    <title>Table</title>
+</head>
+
+
+<body>
+    <table>
+        <caption> Jméno si vymyslete: </caption>
+
+        <colgroup>  
+            <col class="first"> 
+            <col class="second" span="2"> 
+            <col class="third"> 
+            <col class="fourth"> 
+        </colgroup>
+
+       <thead>
+          <tr>
+            <td></td>
+            <th colspan="2">Jméno</th>
+            <th>Pohlaví</th>
+            <th>Práce</th>
+          </tr>
+       </thead>
+
+       <tbody>
+         <tr>
+            <td >1.</td>
+            <td>Karolína</td>
+            <td>Svobodová</td>
+            <td>žena</td>
+            <td>architektka</td>
+         </tr>
+         <tr>
+            <td>2.</td>
+            <td>Tereza </td>
+            <td>Dvořáková</td>
+            <td>žena</td>
+            <td>grafická designérka</td>
+         </tr>
+         <tr>
+            <td>3.</td>
+            <td>Eva </td>
+            <td>Nováková</td>
+            <td>žena</td>
+            <td>softwarová inženýrka</td>
+         </tr>
+         <tr>
+            <td>4.</td>
+            <td>Jana</td>
+            <td>Kučerová</td>
+            <td>žena</td>
+            <td rowspan="2" class="text-red">Bez práce</td>
+         </tr>
+         <tr>
+            <td>5.</td>
+            <td>Marie</td>
+            <td>Veselá</td>
+            <td>žena</td>
+         </tr>
+       </tbody>
+
+       <tbody>
+         <tr>
+            <td>6.</td>
+            <td>Pavel</td>
+            <td>Horák</td>
+            <td>muž</td>
+            <td> IT specialista</td>
+         </tr>
+         <tr>
+            <td>7.</td>
+            <td>Tomáš</td>
+            <td>Beneš</td>
+            <td>muž</td>
+            <td>zedník</td>
+         </tr>
+         <tr>
+            <td>8.</td>
+            <td>Jan</td>
+            <td>Kadlec</td>
+            <td>muž</td>
+            <td>kuchař</td>
+         </tr>
+         <tr>
+            <td>9.</td>
+            <td>Petr</td>
+            <td>neznámé</td>
+            <td>muž</td>
+            <td>elektrikář</td>
+         </tr>
+         <tr>
+            <td>10.</td>
+            <td>Martin</td>
+            <td>Polák</td>
+            <td>muž</td>
+            <td>marketingový specialista</td>
+         </tr>
+       </tbody>
+       <tfoot>
+
+       </tfoot>
+    </table>
+</body>
+</html>

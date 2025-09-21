@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+    height: auto;
+}
+
+
+
+th, td {
+    padding: .8rem 2rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.first, thead{
+    background-color: rgb(199, 217, 232);
+}
+
+tbody:nth-of-type(1) td:not(:first-child) {
+    background-color: rgb(225, 183, 235);
+}
+
+tbody:nth-of-type(2) td:not(:first-child){
+    background-color: rgb(156, 170, 244);
+}
+
+tr{
+    border: 1px solid rgb(209, 202, 202);
+}
+thead  tr th{
+    border:1px solid rgb(209, 202, 202);
+}
+
+.fourth{
+   border:1px solid rgb(209, 202, 202); 
+}
+
+.text-red{
+    color: red;
+    font-weight: bold;
+}
+
+tbody:first-of-type tr td:not(:first-child):nth-child(even)  {
+    background-color: rgb(179, 60, 141);
+}
+
