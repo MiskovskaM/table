@@ -17,8 +17,11 @@ th, td {
 .first, thead{
     background-color: rgb(199, 217, 232);
 }
+ .second{
+    background-color: rgb(117, 76, 130);
+ }
 
- .second, .third, .fourth{
+ .third, .fourth{
     background-color:  rgb(225, 183, 235);
 }
 
