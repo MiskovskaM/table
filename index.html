@@ -1,110 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css"> 
-    <title>Table</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Program Konference WebDev 2025</title>
+  <link rel="stylesheet" href="./css/main.css">
 </head>
-
-
 <body>
-    <table>
-        <caption> Jméno si vymyslete: </caption>
+  <h1>Konference WebDev 2025</h1>
+  <p>Moderní webové technologie | Praha | 15.–16. listopadu</p>
 
-        <colgroup>  
-            <col class="first"> 
-            <col class="second" span="2"> 
-            <col class="third"> 
-            <col class="fourth"> 
-        </colgroup>
+  <table class="schedule">
+    <caption class="schedule__caption">Den 1 – Pátek</caption>
+    
+    <colgroup>
+      <col class="schedule__col--time">
+      <col span="2" class="schedule__col--room">
+    </colgroup>
+    
+    <thead class="schedule__head">
+      <tr>
+        <th>Čas</th>
+        <th>Místnost A</th>
+        <th>Místnost B</th>
+      </tr>
+    </thead>
 
-       <thead>
-          <tr>
-            <td></td>
-            <th colspan="2">Jméno</th>
-            <th>Pohlaví</th>
-            <th>Práce</th>
-          </tr>
-       </thead>
-
-       <tbody>
-         <tr>
-            <td >1.</td>
-            <td>Karolína</td>
-            <td>Svobodová</td>
-            <td>žena</td>
-            <td>architektka</td>
-         </tr>
-         <tr>
-            <td>2.</td>
-            <td>Tereza </td>
-            <td>Dvořáková</td>
-            <td>žena</td>
-            <td>grafická designérka</td>
-         </tr>
-         <tr>
-            <td>3.</td>
-            <td>Eva </td>
-            <td>Nováková</td>
-            <td>žena</td>
-            <td>softwarová inženýrka</td>
-         </tr>
-         <tr>
-            <td>4.</td>
-            <td>Jana</td>
-            <td>Kučerová</td>
-            <td>žena</td>
-            <td rowspan="2" class="text-red">Bez práce</td>
-         </tr>
-         <tr>
-            <td>5.</td>
-            <td>Marie</td>
-            <td>Veselá</td>
-            <td>žena</td>
-         </tr>
-       </tbody>
-
-       <tbody>
-         <tr>
-            <td>6.</td>
-            <td>Pavel</td>
-            <td>Horák</td>
-            <td>muž</td>
-            <td> IT specialista</td>
-         </tr>
-         <tr>
-            <td>7.</td>
-            <td>Tomáš</td>
-            <td>Beneš</td>
-            <td>muž</td>
-            <td>zedník</td>
-         </tr>
-         <tr>
-            <td>8.</td>
-            <td>Jan</td>
-            <td>Kadlec</td>
-            <td>muž</td>
-            <td>kuchař</td>
-         </tr>
-         <tr>
-            <td>9.</td>
-            <td>Petr</td>
-            <td>neznámé</td>
-            <td>muž</td>
-            <td>elektrikář</td>
-         </tr>
-         <tr>
-            <td>10.</td>
-            <td>Martin</td>
-            <td>Polák</td>
-            <td>muž</td>
-            <td>marketingový specialista</td>
-         </tr>
-       </tbody>
-       <tfoot>
-
-       </tfoot>
-    </table>
+    <tbody>
+      <tr>
+        <td class="schedule__time">9:00 - 9:30</td>
+        <td colspan="2" class="schedule__event--keynote">
+          Úvodní keynote: Budoucnost webu
+          <span>Přednáší: Jan Novák</span>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="schedule__time">9:30 - 11:00</td>
+        <td rowspan="2">
+          Workshop: React a TypeScript
+          <span>Lektor: Petr Horák</span>
+        </td>
+        <td>
+          CSS Grid a Flexbox
+          <span>Lektor: Marie Svobodová</span>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="schedule__time">11:00 - 11:30</td>
+        <td class="schedule__event--break">Přestávka</td>
+      </tr>
+      
+      <tr>
+        <td class="schedule__time">11:30 - 13:00</td>
+        <td>
+          Web Security
+          <span>Lektor: Eva Černá</span>
+        </td>
+        <td>
+          Node.js Backend
+          <span>Lektor: Tomáš Dvořák</span>
+        </td>
+      </tr>
+      
+      <tr>
+        <td class="schedule__time">13:00 - 14:00</td>
+        <td colspan="2" class="schedule__event--networking">Networking a oběd</td>
+      </tr>
+    </tbody>
+  </table>  
 </body>
 </html>
